@@ -1,22 +1,95 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+body {
   text-align: center;
+  color: #222;
+  font-size: 24px; 
+  font-family: sans-serif;
+  background-color: rgb(11, 11, 12);
 }
 
-.App-logo {
-  height: 40vmin;
+h2 {
+  color:white;
+  margin: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.foodList {
+  height: 400px;
+  width: 800px;  
+  margin: 10px auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  background-color: grey;
+}
+.foodHead{ 
+  width:2400x;   
+  flex: 1;
+  display: flex;
+  background-color: yellowgreen;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 20px;
+  margin: 2px;
+}
+.foodItem{    
+  flex: 1;
+ display: flex;
+  background-color: rgb(7, 7, 7);
+  color:white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border: 1px solid #222;
+  margin: 2px;
+  border-radius:10%;
 }
 
-.App-link {
-  color: #09d3ac;
+.voteCount {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.countDisplay {
+  padding: 5px 100px 5px 10px;
+  color:black;
+  background-color: yellowgreen;
+}
+.amountDisplay {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  padding: 5px 15px;
+  background: yellow;
+  color:black;
+}
+
+
+.myButton {
+  /*
+  display:flex;
+  color: rgb(57, 116, 3);
+  background-color: #0000;
+  border: none;
+   font-size: 20px;
+/*   padding:0 5px;
+  margin:10px;*//*
+   outline: none;
+  cursor: pointer;
+}*/
+display: flex;
+  /*justify: 'center',*/
+  
+
+  font: 50px;
+  /*    margin:10px;*/
+  outline: none;
+  cursor: pointer;
+  padding: 0 15px;
+};
