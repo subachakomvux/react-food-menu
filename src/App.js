@@ -175,7 +175,7 @@ class App extends Component {
     super(props);
     this.state = {
       food: [
-        { name: "Meatballs with potatoes", price: 50, votes: 0, amount: 0 },
+        { name: "Meatballs", price: 50, votes: 0, amount: 0 },
         { name: "Spaghetti ", price: 60, votes: 0, amount: 0 },
         { name: "Pasta ", price: 70, votes: 0, amount: 0 },
         { name: "Pizza slice", price: 40, votes: 0, amount: 0 }
