@@ -151,25 +151,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import './App.css';
 
-let styles = {
-  margin: 'auto',
-  width: '300px'
-};
-let voteCountStyle = {
-  display: 'flex',
-  justify: 'center',
-  align: 'center',
-  padding: '0 5px'
-};
-
-let foodNameStyle = {
-  width: '200px',
-  display: 'flex',
-  justify: 'center',
-  align: 'center',
-  padding: '0 5px'
-};
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -209,7 +190,7 @@ class App extends Component {
     return (
       <>
         <h2>Today's menu</h2>
-        <div style={styles}>
+        <div class="menuDisplay">
           <Carousel>
             <div>
               <img src="https://thecozyapron.com/wp-content/uploads/2018/05/swedish-meatballs_thecozyapron_1.jpg" alt="Meatballs 40kr" />
@@ -232,28 +213,28 @@ class App extends Component {
 
         <div className="foodList">
           <div class="foodHead">
-            <div style={foodNameStyle}>
+            <div class="menuName">
               <h3>Name of item</h3>
             </div>
-            <div style={foodNameStyle}>
+            <div class="menuName">
               <h3>Price</h3>
             </div>
-            <div style={foodNameStyle}>
+            <div class="menuName">
               <h3>Quantity</h3>
             </div>
-            <div>
+            <div class="menuName">
               <h3>Amount</h3></div>
           </div>
           {
             this.state.food.map((option, i) =>
               <div class="foodItem" key={i} >
-                <div style={foodNameStyle}>
+                <div class="menuName">
                   {option.name}
                 </div>
-                <div style={foodNameStyle}>
+                <div class="menuName">
                   {option.price}
                 </div>
-                <div style={voteCountStyle}>
+                <div class="voteCount">
                   <div class="countDisplay">
                     {option.votes}
                   </div>

@@ -4,6 +4,10 @@
   font-family: Arial, Helvetica, sans-serif;
   
 }
+.menuDisplay {
+  margin:auto;
+  width:300px;
+}
 
 body {
   text-align: center;
@@ -34,7 +38,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  margin: 2px;
+  margin: 5px;
 }
 .foodItem{    
   flex: 1;
@@ -46,19 +50,21 @@ h2 {
   padding: 10px 40px;
   border: 1px solid #222;
   margin: 2px;
-  border-radius:10%;
+  border-radius:5%;
 }
-
-.voteCount {
-  border-radius: 50%;
+.menuName {
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 5px;
 }
 .countDisplay {
   padding: 5px 100px 5px 10px;
   color:black;
   background-color: yellowgreen;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
 }
 .amountDisplay {
   width: 100px;
@@ -66,30 +72,21 @@ h2 {
   justify-content: center;
   align-items: right;
   padding: 5px 15px;
-  background: yellow;
+  background: rgb(234, 238, 230);
   color:black;
 }
-
-
-.myButton {
-  /*
-  display:flex;
-  color: rgb(57, 116, 3);
-  background-color: #0000;
-  border: none;
-   font-size: 20px;
-/*   padding:0 5px;
-  margin:10px;*//*
-   outline: none;
-  cursor: pointer;
-}*/
-display: flex;
-  /*justify: 'center',*/
-  
-
-  font: 50px;
-  /*    margin:10px;*/
+.voteCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.myButton {  
+  display: flex;
+  /*font: 50px;*/
   outline: none;
   cursor: pointer;
-  padding: 0 15px;
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: large;
 };
